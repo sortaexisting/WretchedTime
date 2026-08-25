@@ -133,7 +133,8 @@ dependencies {
 
     // Example project dependency using a sister or child project:
     // implementation project(":myproject")
-
+    implementation files("libs/SereneSeasons-neoforge-1.21.1-2.1.0.2.jar")
+    implementation files("libs/GlitchCore-neoforge-1.21.1-10.1.0.3.jar")
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
