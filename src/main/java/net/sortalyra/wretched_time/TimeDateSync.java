@@ -35,7 +35,7 @@ public class TimeDateSync {
     }
 
     private static void syncTime(MinecraftServer server) {
-        ZonedDateTime time = ZonedDateTime.now(ZoneId.of("Europe/Berlin"));
+        ZonedDateTime time = ZonedDateTime.now(ZoneId.of(Config.TIME_ZONE.get(), ZoneId.SHORT_IDS));
 
         long currentDayTime = getCurrentDayTime(time);
 
